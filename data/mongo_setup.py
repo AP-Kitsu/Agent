@@ -1,9 +1,9 @@
 import mongoengine
 from mongoengine import connect
-import orm 
+from orm.user import User
 
 def global_init():
-    connect(host="mongodb+srv://<AgentUsr>:<Logiologio1998>@cluster0.7bqpr.mongodb.net/?retryWrites=true&w=majority"
+    connect(host="mongodb+srv://AgentUsr:Logiologio1998@cluster0.7bqpr.mongodb.net/?retryWrites=true&w=majority"
             )
     item_1 = {
         "WindowsBuildLabEx": "22000.1.amd64fre.co_release.210604-1628",
