@@ -15,7 +15,7 @@ function makeJson (){
 
 	Get-ComputerInfo | ConvertTo-Json | out-file $PWD\test.json
 	
-	(Get-Content $PWD\test.json).replace('null','"Null"').replace('true','"True"') | Set-Content $PWD\test.json
+	(Get-Content $PWD\test.json).replace('null','"Null"').replace('true','"True"').replace('false','"False"') | Set-Content $PWD\test.json
 	
 }
 makeJson
