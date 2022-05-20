@@ -8,14 +8,14 @@
 	 Filename:     	
 	===========================================================================
 	.DESCRIPTION
-		A description of the file.
+		prende le info e le mette in json
 #>
 
 function makeJson (){
 
-	Get-ComputerInfo | ConvertTo-Json | out-file C:\test.json
+	Get-ComputerInfo | ConvertTo-Json | out-file $PWD\test.json
 	
-	(Get-Content C:\test.json).replace('null',"'Null'").replace('true',"'True'") | Set-Content C:\test.json
+	(Get-Content $PWD\test.json).replace('null','"Null"').replace('true','"True"') | Set-Content $PWD\test.json
 	
 }
 makeJson
