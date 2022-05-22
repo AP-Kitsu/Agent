@@ -1,4 +1,6 @@
 def global_init():
+
+
     item_1 = {
         "WindowsBuildLabEx": "22000.1.amd64fre.co_release.210604-1628",
         "WindowsCurrentVersion": "6.3",
@@ -391,6 +393,9 @@ def global_init():
         "DeviceGuardCodeIntegrityPolicyEnforcementStatus": 2,
         "DeviceGuardUserModeCodeIntegrityPolicyEnforcementStatus": 0
     }
+
+    x=1
     return item_1
+global_init()
 
 
